@@ -5,7 +5,7 @@
 </p>
 
 
-This repository contains my work on developing Deep learning based Bat and Ball Tracker. This is inspired from one of the [Dockship Challenge](http://dockship.io/challenges/60f5a5ae7b01760c32a439f7/ball-&-bat-tracking-hiring-challenge/overview). The aim of the challenge was to build Bat and Ball tracking AI system using International Cricket dataset. 
+This repository contains my work on developing Deep learning based Bat and Ball Tracker. This is inspired from one of the [Dockship Challenge](http://dockship.io/challenges/60f5a5ae7b01760c32a439f7/ball-&-bat-tracking-hiring-challenge/overview). The aim of the challenge was to build Real-time Object detection system using International Cricket dataset. 
 
 ## Dataset
 
