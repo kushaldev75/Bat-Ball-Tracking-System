@@ -52,12 +52,14 @@ After preparation, file structure of dataset looks like this -
         - img1.txt
         - img2.png
         - img2.txt
+        ...
 
     - val
         - imgval1.png
         - imgval1.txt
         - imgval2.png
         - imgval2.txt
+        ...
       
     - dataset.yaml
 
@@ -67,4 +69,11 @@ After preparation, file structure of dataset looks like this -
 
 ## Result
 
+<p align='center'>
+<img src="https://github.com/kushaldev75/Bat-Ball-Tracking-System/blob/main/results/results.png" >
+</p>
+
+<p align='center'>
+<img src="https://github.com/kushaldev75/Bat-Ball-Tracking-System/blob/main/results/combinegiftest.gif">
+</p>
 
