@@ -33,3 +33,38 @@ And below are some videos from test set-
 To download complete dataset, please visit dockship challenge [page](https://dockship.io/challenges/60f5a5ae7b01760c32a439f7/ball-&-bat-tracking-hiring-challenge/overview) and click on Download Dataset. It is zip file of 342.19 MB.
 
 ## Approach
+
+- In order to build Real-time object tracking system, I chose YOLO family of arcitectures as my main model to train on given dataset. YOLO “You Only Look Once” is one of the most popular and most favorite algorithms for AI engineers. It always has been the first preference for real-time object detection. I used newest member of this family i.e. YOLOv5.
+- Since YOLOv5 requires dataset to be in YOLO format. So I converted given default dataset format to YOLO format using YOLOv5_Formatting.ipynb notebbok. The major diffeernce is that the default dataset contained annotations in single csv whereas YOLO format requires separate txt file for each image with following specifications-
+  - One row per object
+  - Each row is ```class x_center y_center width height``` format.
+  - Box coordinates must be in normalized xywh format (from 0 - 1). If your boxes are in pixels, divide ```x_center``` and ```width``` by image width, and ```y_center``` and ```height``` by image height.
+  - Class numbers are zero-indexed (start from 0).
+
+For me, this part of project i.e. preparing separat txt file from single csv was really challenging and great learning experience.
+
+After preparation, file structure of dataset looks like this -
+
+```
+- data
+    - train
+        - img1.png
+        - img1.txt
+        - img2.png
+        - img2.txt
+
+    - val
+        - imgval1.png
+        - imgval1.txt
+        - imgval2.png
+        - imgval2.txt
+      
+    - dataset.yaml
+
+```
+
+- Training- To train YOLOv5 on my dataset, I used YOLOv5 official tutorial and made changes required for my dataset. I used Google Colab for carrying out training using GPU. I took YOLOv5x model pretrained on COCO Object detection dataset. Than I carried out training specifically for my custom dataset for 20 epochs which took almost half an hour. Yeah, Not too long!
+
+## Result
+
+
