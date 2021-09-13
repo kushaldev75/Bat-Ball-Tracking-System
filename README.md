@@ -91,7 +91,6 @@ Some observation we can made is that in some images model doesn't do well at pre
 <img src="https://github.com/kushaldev75/Bat-Ball-Tracking-System/blob/main/results/val_batch1_labels.jpg" width="400" height="420">
 &emsp;
 &emsp;
-&emsp;
 <img src="https://github.com/kushaldev75/Bat-Ball-Tracking-System/blob/main/results/val_batch1_pred.jpg" width="400" height="420">
 </p>
 
