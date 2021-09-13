@@ -69,11 +69,31 @@ After preparation, file structure of dataset looks like this -
 
 ## Result
 
-<p align='center'>
-<img src="https://github.com/kushaldev75/Bat-Ball-Tracking-System/blob/main/results/results.png" >
-</p>
+Below is the result of Model tracking objects in real time on 7 test_set videos. (I combined all 7 videos  and slowed down to 0.5x for proper observation)
 
 <p align='center'>
 <img src="https://github.com/kushaldev75/Bat-Ball-Tracking-System/blob/main/results/combinegiftest.gif">
 </p>
+
+
+<p align='center'>
+<img src="https://github.com/kushaldev75/Bat-Ball-Tracking-System/blob/main/results/results.png" >
+</p>
+
+
+Below is the Mosiac of some images from the validation set. **On Left**, we have have images with ground truth labels whereas **On Right** we have YOLOv5 detection results.
+
+
+Some observation we can made is that in some images model doesn't do well at predicting bat in particular. But it is very intresting to see 1st image of middle row. It looks like model performs better than ground truth label in detecting the bat.
+
+
+<p align='center'>
+<img src="https://github.com/kushaldev75/Bat-Ball-Tracking-System/blob/main/results/val_batch1_labels.jpg" width="400" height="420">
+&emsp;
+&emsp;
+&emsp;
+&emsp;
+<img src="https://github.com/kushaldev75/Bat-Ball-Tracking-System/blob/main/results/val_batch1_pred.jpg" width="400" height="420">
+</p>
+
 
