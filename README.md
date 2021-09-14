@@ -84,7 +84,7 @@ Below is the result of Model tracking objects in real time on 7 test_set videos.
 Below is the Mosiac of some images from the validation set. **On Left**, we have have images with ground truth labels whereas **On Right** we have YOLOv5 detection results.
 
 
-Some observation we can made is that in some images model doesn't do well at predicting bat in particular. But it is very intresting to see 1st image of middle row. It looks like model performs better than ground truth label in detecting the bat.
+One observation we can make is that in some images model doesn't do well at predicting bat in particular. But it is very interesting to see 1st image of middle row. It looks like model performs better than ground truth label in detecting the bat.
 
 
 <p align='center'>
