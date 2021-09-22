@@ -34,14 +34,14 @@ To download complete dataset, please visit dockship challenge [page](https://doc
 
 ## Approach
 
-- In order to build Real-time object tracking system, I chose YOLO family of arcitectures as my main model to train on given dataset. YOLO “You Only Look Once” is one of the most popular and most favorite algorithms for AI engineers. It always has been the first preference for real-time object detection. I used newest member of this family i.e. YOLOv5.
-- Since YOLOv5 requires dataset to be in YOLO format. So I converted given default dataset format to YOLO format using YOLOv5_Formatting.ipynb notebbok. The major diffeernce is that the default dataset contained annotations in single csv whereas YOLO format requires separate txt file for each image with following specifications-
+- In order to build Real-time object tracking system, I chose YOLO family of architectures as my main model to train on given dataset. YOLO “You Only Look Once” is one of the most popular and most favorite algorithms for AI engineers. It always has been the first preference for real-time object detection. I used newest member of this family i.e. YOLOv5.
+- Since YOLOv5 requires dataset to be in YOLO format. So I converted given default dataset format to YOLO format using YOLOv5_Formatting.ipynb notebook. The major difference is that the default dataset contained annotations in single csv whereas YOLO format requires separate txt file for each image with following specifications-
   - One row per object
   - Each row is ```class x_center y_center width height``` format.
   - Box coordinates must be in normalized xywh format (from 0 - 1). If your boxes are in pixels, divide ```x_center``` and ```width``` by image width, and ```y_center``` and ```height``` by image height.
   - Class numbers are zero-indexed (start from 0).
 
-For me, this part of project i.e. preparing separat txt file from single csv was really challenging and great learning experience.
+For me, this part of project i.e. preparing separate txt file from single csv was really challenging and great learning experience.
 
 After preparation, file structure of dataset looks like this -
 
@@ -69,7 +69,7 @@ After preparation, file structure of dataset looks like this -
 
 ## Result
 
-Below is the result of Model tracking objects in real time on 7 test_set videos. (I combined all 7 videos  and slowed down to 0.5x for proper observation)
+Below is the result of Model tracking objects in real time on 7 test_set videos. (I combined all 7 videos and slowed down to 0.5x for proper observation)
 
 <p align='center'>
 <img src="https://github.com/kushaldev75/Bat-Ball-Tracking-System/blob/main/results/combinegiftest.gif">
@@ -81,10 +81,10 @@ Below is the result of Model tracking objects in real time on 7 test_set videos.
 </p>
 
 
-Below is the Mosiac of some images from the validation set. **On Left**, we have have images with ground truth labels whereas **On Right** we have YOLOv5 detection results.
+Below is the Mosiac of some images from the validation set. **On Left**, we have images with ground truth labels whereas **On Right** we have YOLOv5 detection results.
 
 
-One observation we can make is that in some images model doesn't do well at predicting bat in particular. But it is very interesting to see 1st image of middle row. It looks like model performs better than ground truth label in detecting the bat.
+One observation we can make is that in some images model doesn't do well at predicting bat in particular. But it is also very interesting to see 1st image of middle row. It looks like model performs better than ground truth label in detecting the bat. Point to note is that this result came from using pretty much default parameters. Still model performance looks really well on test videos. If we tune the parameters, I believe ther is still room of improvement.
 
 
 <p align='center'>
